@@ -319,10 +319,26 @@ body.light-mode ::placeholder { /* Standard */
         font-size: 16px;
         padding: 5px;
     }
-    
+
     /* Optionnel : si tu veux que le header prenne toute la largeur sur mobile */
     header {
         width: 100%;
         box-sizing: border-box;
+    }
+
+    /* Ajouter un léger espace supplémentaire au-dessus du main */
+    main {
+        padding-top: 110px; /* Légèrement plus d'espace */
+    }
+
+    /* Assurer un bon espacement entre le header et le texte "À propos" */
+    #about h1, #about p {
+        text-align: left;  /* S'assurer que le texte est aligné à gauche */
+        margin-top: 20px;  /* Augmenter l'espacement */
+    }
+
+    /* Ajouter de l'espace supplémentaire dans la section "À propos" */
+    #about {
+        padding: 10px;
     }
 }
