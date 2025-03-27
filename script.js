@@ -6,12 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // 🌙 Gestion du Thème Clair / Sombre
     if (localStorage.getItem("theme") === "light") {
         body.classList.add("light-mode");
+        themeToggle.innerHTML = "🌙"; // Icône du soleil en mode clair
+    } else {
+        themeToggle.innerHTML = "☀️"; // Icône de la lune en mode sombre
     }
 
     themeToggle.addEventListener("click", () => {
         body.classList.toggle("light-mode");
 
+        // Sauvegarder le thème dans le localStorage
         localStorage.setItem("theme", body.classList.contains("light-mode") ? "light" : "dark");
+
+        // Mettre à jour l'icône en fonction du mode
+        if (body.classList.contains("light-mode")) {
+            themeToggle.innerHTML = "☀️"; // Icône du soleil en mode clair
+        } else {
+            themeToggle.innerHTML = "🌙"; // Icône de la lune en mode sombre
+        }
     });
 
     // 🌍 Traductions FR / EN
