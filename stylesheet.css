@@ -1,0 +1,279 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    padding: 50px 15%;
+}
+
+/* Style général des titres */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #58a6ff;
+    margin: 40px 0 10px;
+    text-align: left;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    display: inline-block; /* Le cadre s'arrête au texte */
+}
+
+/* Barre sous le titre */
+h1::after {
+    content: "";
+    display: block;
+    width: 50px; /* Départ court */
+    height: 3px;
+    background-color: #58a6ff;
+    margin-top: 5px;
+    transition: width 0.5s ease;
+}
+
+/* Effet au survol */
+h1:hover {
+    font-size: 2.2rem;
+    transform: translateX(5px);
+    background-color: rgba(88, 166, 255, 0.15);
+    border: 2px solid #58a6ff;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+    width: fit-content; /* Ajuste le cadre à la largeur du texte */
+}
+
+/* Le trait prend toute la largeur du titre */
+h1:hover::after {
+    width: 100%;
+}
+
+/* Conteneur des compétences */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Grille responsive */
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center; /* Centre chaque compétence dans sa cellule */
+}
+
+/* Style des blocs de compétences */
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centre l'icône et le texte horizontalement */
+    gap: 10px;
+    background: #161b22;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    font-size: 1.1rem;
+    color: #c9d1d9;
+    transition: all 0.3s ease;
+    text-align: center; /* Centre le texte et l'icône */
+    width: fit-content;  /* Ajuste la largeur du cadre en fonction du texte + icône */
+    min-width: 150px; /* Minimum width pour que le cadre soit assez grand même si le texte est court */
+    word-wrap: break-word; /* Casse les mots longs */
+    white-space: normal; /* Permet aux lignes de se couper */
+}
+
+/* Icônes des compétences */
+.skill i {
+    font-size: 1.5rem;
+    color: #58a6ff;
+}
+
+/* Effet au survol des compétences */
+.skill:hover {
+    transform: translateY(-3px);
+    background: rgba(88, 166, 255, 0.2);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+}
+
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #c9d1d9;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #58a6ff;
+    border-radius: 5px;
+    background: #161b22;
+    color: #c9d1d9;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #88c0ff;
+    box-shadow: 0 0 8px rgba(88, 166, 255, 0.5);
+}
+
+button {
+    padding: 10px;
+    background: #58a6ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #4078c0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #161b22;
+    padding: 5px 20px; /* Réduit le padding du header */
+    border-bottom: 1px solid #58a6ff; /* Diminue l'épaisseur de la bordure */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Titre du header */
+header h1 {
+    font-size: 1rem; /* Réduit la taille du titre */
+    color: #58a6ff;
+    margin: 0; /* Enlève la marge par défaut */
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px; /* Réduit l'espace entre les liens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c9d1d9;
+    font-size: 0.85rem; /* Réduit la taille des liens */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/* Section des paramètres (langue + thème) */
+.settings {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Sélecteur de langue */
+#language {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #58a6ff;
+    background: #161b22;
+    color: #c9d1d9;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+/* Bouton de thème */
+#theme-toggle {
+    padding: 4px 8px; /* Réduit la taille du bouton */
+    border: none;
+    border-radius: 5px;
+    background: #58a6ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #4078c0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #c9d1d9;
+    font-size: 0.9rem;
+}
+
+/* Mode clair */
+.light-mode {
+    background-color: #ffffff;
+    color: #0d1117;
+}
+
+/* Header et composants */
+.light-mode header,
+.light-mode .skill,
+.light-mode input,
+.light-mode textarea {
+    background: #f0f0f0;
+    color: #0d1117;
+    border-color: #58a6ff;
+}
+
+/* Lien en mode clair */
+.light-mode a {
+    color: #0d1117;
+}
+
+.light-mode h1 {
+    color: #0d1117;
+}
+
+.light-mode h1::after {
+    background-color: #0d1117;
+}
+
+/* Effet au survol en mode clair */
+.light-mode .skill:hover {
+    background: rgba(88, 166, 255, 0.3);
+}
+
+/* Mode clair - Placeholders en noir */
+body.light-mode ::-webkit-input-placeholder { /* Pour Chrome, Safari */
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+body.light-mode ::-moz-placeholder { /* Pour Firefox */
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+body.light-mode :-ms-input-placeholder { /* Pour Internet Explorer */
+    color: #000000 !important;
+    opacity: 1 !important;
+}
+
+body.light-mode ::placeholder { /* Standard */
+    color: #000000 !important;
+    opacity: 1 !important;
+}

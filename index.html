@@ -4,20 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio VERHUST Vincent</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="script.js" defer></script> <!-- Chargement après HTML -->
 </head>
+
 <body>
-    //
-    ajouter compétences: html css etc avec les icones,
-    ajouter les projets perso faits (web et app)
-    ajouter page contact
-    + lien vers les repo github si jai fait des choses dessus (odin project notamment)
-    + un petit a propos sur moi et mes qualités
-    ajouter sur le cv via le github.io
-    + sur les projets mettre "à venir"
-    ajout langue FR - EN, THEME DARK ET LIGHT (dark de base + fr de base)
-    + lien pr telecharger CV
-    mettre la repo en publique
-     commentaires a mettre dans readme plutôt ou autre doc a sup plus tard 
-    //
+<header>
+    <h1 data-lang="title">Portfolio VERHUST Vincent</h1>
+    <nav>
+        <ul>
+            <li><a href="#about" data-lang="about">À propos</a></li>
+            <li><a href="#skills" data-lang="skills">Compétences</a></li>
+            <li><a href="#contact" data-lang="contact">Contact</a></li>
+            <li><a href="https://cvdesignr.com/p/67cea1134204b?hl=fr_FR" target="_blank" data-lang="cv">📄 Mon CV</a></li>
+        </ul>
+    </nav>
+    <div class="settings">
+        <select id="language">
+            <option value="fr" selected>FR</option>
+            <option value="en">EN</option>
+        </select>
+        <button id="theme-toggle">🌙 <span data-lang="theme">Mode sombre</span></button>
+    </div>
+</header>
+
+<main>
+    <section id="about">
+        <h1 data-lang="about">À propos</h1>
+        <p data-lang="aboutText">
+            Fort d’une expérience en IT et en systèmes & réseaux, je possède des compétences en développement web ainsi qu’en gestion de bases de données et en administration systèmes et réseaux.
+            <br><br>
+            Grâce à mes expériences en alternance, j’ai acquis une approche méthodique dans la résolution de problèmes techniques et l’administration de serveurs. J’ai également travaillé sur des projets tels que la mise en place de serveurs NGINX, la supervision et la sécurisation d’infrastructures réseaux.
+            <br><br>
+            Passionné par le développement et les nouvelles technologies, je cherche à intégrer une entreprise en tant que développeur full stack, où je pourrai continuer à monter en compétences et contribuer efficacement aux projets en cours.
+        </p>        
+    </section>
+
+    <section id="skills">
+        <h1 data-lang="skills">Compétences</h1>
+        <div class="skills">
+            <div class="skill"><i class="fa-brands fa-html5"></i> HTML</div>
+            <div class="skill"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+            <div class="skill"><i class="fa-brands fa-js"></i> JavaScript</div>
+            <div class="skill"><i class="fa-brands fa-php"></i> PHP</div>
+            <div class="skill"><i class="fa-solid fa-database"></i> SQL</div>
+            <div class="skill"><i class="fa-solid fa-laptop-code"></i> Bash</div>
+            <div class="skill"><i class="fa-solid fa-terminal"></i> PowerShell</div>
+            <div class="skill"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill"><i class="fa-brands fa-git-alt"></i> Git</div>
+            <div class="skill"><i class="fa-brands fa-wordpress"></i> WordPress</div>
+            <div class="skill"><i class="fa-brands fa-github"></i> GitHub</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 data-lang="contact">Contact</h1>
+        <form action="https://formspree.io/f/movenawk" method="POST">
+            <label for="email" data-lang="email">Votre email :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message" data-lang="message">Votre message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+    
+            <button type="submit" data-lang="send">Envoyer</button>
+        </form>
+    </section>
+</main>
 </body>
 </html>
