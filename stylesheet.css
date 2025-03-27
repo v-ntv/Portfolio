@@ -277,3 +277,52 @@ body.light-mode ::placeholder { /* Standard */
     color: #000000 !important;
     opacity: 1 !important;
 }
+
+/* Pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .settings {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .settings select, .settings button {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    /* Assurer que le titre est bien centré */
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    /* Ajuster la largeur du select */
+    #language {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    /* Optionnel : si tu veux que le header prenne toute la largeur sur mobile */
+    header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
