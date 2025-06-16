@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             email: "Your email:",
             message: "Your message:",
             send: "Send",
-            cv: "📄 My Resume",
             theme: "Dark Mode"
         },
         fr: {
@@ -50,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
             email: "Votre email :",
             message: "Votre message :",
             send: "Envoyer",
-            cv: "📄 Mon CV",
             theme: "Mode sombre"
         }
     };
