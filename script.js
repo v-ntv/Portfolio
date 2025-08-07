@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // 🌙 Gestion du Thème Clair / Sombre
     if (localStorage.getItem("theme") === "light") {
         body.classList.add("light-mode");
-        themeToggle.innerHTML = "☀️"; // Icône du soleil en mode clair
+        themeToggle.innerHTML = "🌙"; // Icône du soleil en mode clair
     } else {
-        themeToggle.innerHTML = "🌙"; // Icône de la lune en mode sombre
+        themeToggle.innerHTML = "☀️"; // Icône de la lune en mode sombre
     }
 
     themeToggle.addEventListener("click", () => {
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mettre à jour l'icône en fonction du mode
         if (body.classList.contains("light-mode")) {
-            themeToggle.innerHTML = "☀️"; // Icône du soleil en mode clair
+            themeToggle.innerHTML = "🌙"; // Icône pour passer en mode sombre
         } else {
-            themeToggle.innerHTML = "🌙"; // Icône de la lune en mode sombre
+            themeToggle.innerHTML = "☀️"; // Icône pour passer en mode clair
         }
     });
 
