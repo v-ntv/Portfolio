@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script src="../script.js"></script>
+    <link rel="icon" type="image/png" href="../img/logo.PNG"/>
 </head>
 <body>
-        <iframe src="projets/airbnb_paris_project.pdf" width="1000" height="1000"></iframe>
+    <header>
+        <a href="../index.html"><h1 data-lang="project"></h1></a>
+    <div class="settings">
+        <select id="language">
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
+        </select>
+        <button id="theme-toggle"><span data-lang="theme"></span></button>
+    </div>
+</header>
+        <iframe src="../projets/airbnb_paris_project.pdf" width="1000" height="1000"></iframe>
 </body>
 </html>

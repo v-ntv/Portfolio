@@ -5,37 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio VERHUST Vincent</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="script.js"></script> <!-- Chargement après HTML -->
-    <link rel="icon" type="image/png" href="https://www.digital-marketing-66.fr/wp-content/uploads/2021/02/qualites-bon-developpeur-web.png"/>
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="img/logo.PNG"/>
 </head>
 
 <body>
 <header>
-    <h1 data-lang="title">Portfolio VERHUST Vincent</h1>
+    <h1 data-lang="title"></h1>
     <nav>
         <ul>
-            <li><a href="#about" data-lang="about">À propos</a></li>
-            <li><a href="#skills" data-lang="skills">Compétences</a></li>
-            <li><a href="#project" data-lang="project">Projets</a></li>
-            <li><a href="#contact" data-lang="contact">Contact</a></li>
+            <li><a href="#about" data-lang="about"></a></li>
+            <li><a href="#skills" data-lang="skills"></a></li>
+            <li><a href="#project" data-lang="project"></a></li>
+            <li><a href="#contact" data-lang="contact"></a></li>
         </ul>
     </nav>
     <div class="settings">
         <select id="language">
-            <option value="fr" selected>FR</option>
-            <option value="en">EN</option>
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
         </select>
-        <button id="theme-toggle">🌙 <span data-lang="theme">Mode sombre</span></button>
+        <button id="theme-toggle"><span data-lang="theme"></span></button>
     </div>
 </header>
 
 <main>
 
-
-
-
-// refaire les fichiers pour faire plus simple et moins chatgpt
+--- refaire les fichiers pour faire plus simple et moins chatgpt
+--- centrer les visu de pdf
+---   revoir padding top du body selon les pages (index aussi) à la fin 
 
 > language spoken
 > Available for hire
@@ -54,21 +52,25 @@
         <div class="skills"></div>
     </section>
 
-        <section id="project">
-        <h1 data-lang="project">Projets</h1>
-        <p data-lang="projectText">icone rectangle avec image du projet, titre et p-e légère description, rectangles en ligne affichant les projets et linkant vers les autres pages html (projet1,2...), projet qui utilise du html css pour le front end dev: le portfolio, projet...</p>
-            </section>
+    <section id="project">
+        <h1 data-lang="project"></h1>
+        <p data-lang="projectText"></p>
+            <a class="projects" id="nginx" href="pages_projets/projet_nginx.html"></a>
+            <a class="projects" id="nginx" href="pages_projets/projet_supervision.html">Airbnb Paris Project</a>
+            <a class="projects" id="nginx" href="pages_projets/projet_securite_reseaux_parefeu.html">Airbnb Paris Project</a>
+            <a class="projects" id="nginx" href="pages_projets/airbnb_paris_project.html">Airbnb Paris Project</a>
+            <a class="projects" id="nginx" href="pages_projets/thelook_ecommerce_project.html">Airbnb Paris Project</a>
+            <a class="projects" id="nginx" href="pages_projets/projet_renta_immo.html">Airbnb Paris Project</a>
+    </section>
 
     <section id="contact">
-        <h1 data-lang="contact">Contact</h1>
+        <h1 data-lang="contact"></h1>
         <form action="https://formspree.io/f/movenawk" method="POST">
-            <label for="email" data-lang="email">Votre email :</label>
+            <label for="email" data-lang="email">V</label>
             <input type="email" id="email" name="email" required>
-    
-            <label for="message" data-lang="message">Votre message :</label>
+            <label for="message" data-lang="message"></label>
             <textarea id="message" name="message" rows="5" required></textarea>
-    
-            <button type="submit" data-lang="send">Envoyer</button>
+            <button type="submit" data-lang="send"></button>
         </form>
     </section>
 </main>
