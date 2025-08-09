@@ -82,7 +82,7 @@ Mon principal atout réside dans mon expérience en informatique. Elle me permet
         localStorage.setItem("lang", lang);
     };
 
-    const lang = localStorage.getItem("lang") || "fr";
+    const lang = localStorage.getItem("lang") || "en";
     languageSelect.value = lang;
     changeLanguage(lang);
 
