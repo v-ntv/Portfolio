@@ -275,9 +275,14 @@ body.light-mode ::placeholder {
   padding: 10px;
 }
 
-#language_used {
-    font-size: 20px;
+.language_used_h3 {
     text-align: center;
+    font-size: 20px;
+}
+
+.language_used_h2 {
+    text-align: center;
+    font-size: 40px;
 }
 
 #tech_stack {
@@ -304,10 +309,6 @@ body.light-mode ::placeholder {
 
 #title_p {
     color: white;
-}
-
-#fr_btn {
-    
 }
 
 /* Responsive */
