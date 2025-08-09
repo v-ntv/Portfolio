@@ -238,6 +238,59 @@ body.light-mode ::placeholder {
   display: inline-block;
 }
 
+#projet_type {
+    font-size: 20px;
+    text-align: center;
+}
+
+#name {
+    font-size: 50px;
+    text-align: center;
+}
+
+.container_p {
+  display: flex;
+  gap: 20px; 
+}
+
+.bloc_1 {
+  flex: 1; 
+  padding: 10px;
+}
+
+.bloc_2 {
+  flex: 1; 
+  border: 1px solid #ccc;
+  border-radius: 12px; 
+  padding: 10px;
+}
+
+#language_used {
+    font-size: 20px;
+    text-align: center;
+}
+
+#tech_stack {
+    font-size: 20px;
+    text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: black;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  user-select: none;
+}
 
 /* Responsive */
 
