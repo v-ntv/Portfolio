@@ -11,7 +11,7 @@ body {
     background: #0d1117;
     color: #c9d1d9;
     padding: 50px 15%;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 h1 {
@@ -318,8 +318,11 @@ i:hover {
 
 .icon-container {
   display: flex;
-  align-items: center;  /* aligne verticalement */
-  gap: 20px;            /* espace entre chaque bloc */
+  align-items: center;      /* aligne verticalement */
+  gap: 10px;                /* espace entre chaque bloc */
+  justify-content: space-between; /* espace tous les blocs sur toute la largeur */
+  flex-wrap: nowrap;        /* empêche le retour à la ligne */
+  width: 100%;              /* prend toute la largeur du parent */
 }
 
 .icon-line {
@@ -333,17 +336,11 @@ i:hover {
 }
 
 .icon-line i {
-  font-size: 20px;
+  font-size: 30px;
 }
 
-.mail-icon {
-  font-size: 24px;
-  text-decoration: none; 
-  transition: color 0.3s;
-}
-
-.mail-icon:hover {
-  color: #0077b5; /* change de couleur au survol */
+.icon-line h2[data-lang] {
+  font-size: 1.5rem;
 }
 
 /* Responsive */
