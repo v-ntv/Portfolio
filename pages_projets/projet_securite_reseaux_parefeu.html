@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Security, Network & Firewall Project</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <script src="../script.js"></script>
+    <link rel="icon" type="image/png" href="../img/logo.PNG"/>
 </head>
 <body>
-        <iframe src="../projets/projet_securite_reseaux_parefeu.pdf" width="1000" height="1000"></iframe>
+        <header>
+    <a href="../index.html#project"><h1 data-lang="project"></h1></a>
+    <div class="settings">
+        <select id="language">
+            <option value="fr" >FR</option>
+            <option value="en" selected>EN</option>
+        </select>
+        <button id="theme-toggle"><span data-lang="theme"></span></button>
+    </div>
+</header>
+
+    <h3 id="projet_type"></h3> 
+
+    <h2 id="name"></h2> 
+
+<br>
+
+<div class="container_p">
+
+  <div class="bloc_1">
+    <h3 id="language_used_h3"></h3> 
+    <h2 id="language_used_h2"></h2> 
+  </div>
+
+  <div class="bloc_2">
+    <h3 id="tech_stack">Tech Stack</h3> 
+      <div class="tags">
+    <span class="tag">Active Directory</span>
+    <span class="tag">DMZ</span>
+    <span class="tag">DNS</span>
+    <span class="tag">Firewall Rules</span>
+    <span class="tag">Iptable</span>
+    <span class="tag">Nginx</span>
+    <span class="tag">pfSense</span>
+    <span class="tag">PowerShell</span>
+    <span class="tag">Routing</span>
+    <span class="tag">SMB</span>
+    <span class="tag">VMware</span>
+    <span class="tag">Windows</span>
+  </div>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<div style="text-align: center;">
+  <iframe src="../projets/projet_securite_reseaux_parefeu.pdf" width="1000" height="1000" style="max-width: 100%;"></iframe>
+</div>
+
+<script>
+const translations = {
+    fr: {
+        projet_type: "Sécurité du réseau",
+        language_used_h3: "Langage utilisé",
+        language_used_h2: "Français",
+        name: "Projet Sécurité, Réseaux & Pare-feu"
+    },
+    en: {
+        projet_type: "Network Security",
+        language_used_h3: "Language used",
+        language_used_h2: "French",
+        name: "Security, Network & Firewall Project"
+    }
+};
+
+const langSelect = document.getElementById('language');
+
+function setLanguage(lang) {
+    for (const key of ['projet_type','name', 'language_used_h3', 'language_used_h2']) {
+        const el = document.getElementById(key);
+        if (el) el.textContent = translations[lang][key];
+    }
+}
+
+// initialisation langue par défaut (select déjà sur "en")
+setLanguage(langSelect.value);
+
+langSelect.addEventListener('change', (e) => {
+    setLanguage(e.target.value);
+});
+</script>
+
 </body>
 </html>
