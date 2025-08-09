@@ -1,31 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const themeToggle = document.getElementById("theme-toggle");
+document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;
+    const themeToggle = document.getElementById("theme-toggle");
     const languageSelect = document.getElementById("language");
 
-    // 🌙 Gestion du Thème Clair / Sombre
-    if (localStorage.getItem("theme") === "light") {
-        body.classList.add("light-mode");
-        themeToggle.innerHTML = "🌙"; // Icône du soleil en mode clair
-    } else {
-        themeToggle.innerHTML = "☀️"; // Icône de la lune en mode sombre
-    }
+    const setTheme = (mode) => {
+        body.classList.toggle("light-mode", mode === "light");
+        themeToggle.innerHTML = mode === "light" ? "🌙" : "☀️";
+        localStorage.setItem("theme", mode);
+    };
 
-    themeToggle.addEventListener("click", () => {
-        body.classList.toggle("light-mode");
+    setTheme(localStorage.getItem("theme") || "dark");
 
-        // Sauvegarder le thème dans le localStorage
-        localStorage.setItem("theme", body.classList.contains("light-mode") ? "light" : "dark");
+    themeToggle.addEventListener("click", () =>
+        setTheme(body.classList.contains("light-mode") ? "dark" : "light")
+    );
 
-        // Mettre à jour l'icône en fonction du mode
-        if (body.classList.contains("light-mode")) {
-            themeToggle.innerHTML = "🌙"; // Icône pour passer en mode sombre
-        } else {
-            themeToggle.innerHTML = "☀️"; // Icône pour passer en mode clair
-        }
-    });
-
-    // 🌍 Traductions FR / EN
     const translations = {
         en: {
             title: "Portfolio VERHUST Vincent",
@@ -53,24 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
-    function changeLanguage(lang) {
+    const changeLanguage = (lang) => {
         document.querySelectorAll("[data-lang]").forEach(el => {
             const key = el.getAttribute("data-lang");
-            if (translations[lang][key]) {
-                el.innerHTML = translations[lang][key];
-            }
+            if (translations[lang][key]) el.innerHTML = translations[lang][key];
         });
-
         localStorage.setItem("lang", lang);
-    }
+    };
 
-    // 🔄 Applique la langue sauvegardée ou défaut à FR
-    const savedLang = localStorage.getItem("lang") || "fr";
-    languageSelect.value = savedLang;
-    changeLanguage(savedLang);
+    const lang = localStorage.getItem("lang") || "fr";
+    languageSelect.value = lang;
+    changeLanguage(lang);
 
-    // 🎛️ Écouteur pour changer la langue
-    languageSelect.addEventListener("change", (event) => {
-        changeLanguage(event.target.value);
-    });
+    languageSelect.addEventListener("change", e => changeLanguage(e.target.value));
 });
