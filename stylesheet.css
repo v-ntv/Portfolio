@@ -325,21 +325,21 @@ i:hover {
 
 .icon-container {
   display: flex;
-  align-items: center;      /* aligne verticalement */
-  gap: 10px;                /* espace entre chaque bloc */
-  justify-content: space-between; /* espace tous les blocs sur toute la largeur */
-  flex-wrap: nowrap;        /* empêche le retour à la ligne */
-  width: 100%;              /* prend toute la largeur du parent */
+  align-items: center;      
+  gap: 10px;               
+  justify-content: space-between; 
+  flex-wrap: nowrap;        
+  width: 100%;            
 }
 
 .icon-line {
   display: flex;
   align-items: center; 
-  gap: 5px;             /* espace entre icône et texte */
+  gap: 5px;           
 }
 
 .icon-line h2 {
-  margin: 0; /* supprime marge par défaut des h2 */
+  margin: 0; 
 }
 
 .icon-line i {
@@ -354,18 +354,17 @@ i:hover {
 }
 
 #contact .icons {
-  display: flex;          /* icônes côte à côte */
-  gap: 20px;              /* espace entre icônes */
-  margin-bottom: 10px;    /* garde un peu d’espace en dessous */
+  display: flex;         
+  gap: 20px;              
+  margin-bottom: 10px;    
 }
 
-/* adapte le style des liens pour qu’ils soient en ligne et non en bloc */
 #contact .icons a {
-  display: inline-block;  /* plus block pour côte à côte */
+  display: inline-block; 
   font-size: 2rem;
   color: white;
   text-decoration: none;
-  margin-bottom: 0;       /* pas d’espace vertical ici */
+  margin-bottom: 0;      
   transition: color 0.3s;
 }
 
@@ -373,7 +372,6 @@ i:hover {
   color: #0077b5;
 }
 
-/* Light mode, même principe */
 .light-mode #contact .icons a {
   color: black;
 }
@@ -388,7 +386,6 @@ i:hover {
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
     header {
         padding: 10px;
