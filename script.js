@@ -35,7 +35,11 @@ My main strength is my background in IT, it gives me a solid foundation to under
             email: "Your email:",
             message: "Your message:",
             send: "Send",
-            theme: "Dark Mode"
+            theme: "Dark Mode",
+            language_spoken: "English, French",
+            hire: "Available for hire",
+            where: "International",
+            how: "Remote, Hybrid"
         },
         fr: {
             title: "Portfolio VERHUST Vincent",
@@ -55,7 +59,11 @@ Mon principal atout réside dans mon expérience en informatique. Elle me permet
             email: "Votre email :",
             message: "Votre message :",
             send: "Envoyer",
-            theme: "Mode sombre"
+            theme: "Mode sombre",
+            language_spoken: "Anglais, Français",
+            hire: "Disponible à l'embauche",
+            where: "International",
+            how: "Remote, Hybride"
         }
     };
 

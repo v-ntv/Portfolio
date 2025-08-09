@@ -316,6 +316,36 @@ i:hover {
   color: #0077b5; 
 }
 
+.icon-container {
+  display: flex;
+  align-items: center;  /* aligne verticalement */
+  gap: 20px;            /* espace entre chaque bloc */
+}
+
+.icon-line {
+  display: flex;
+  align-items: center; 
+  gap: 5px;             /* espace entre icône et texte */
+}
+
+.icon-line h2 {
+  margin: 0; /* supprime marge par défaut des h2 */
+}
+
+.icon-line i {
+  font-size: 20px;
+}
+
+.mail-icon {
+  font-size: 24px;
+  text-decoration: none; 
+  transition: color 0.3s;
+}
+
+.mail-icon:hover {
+  color: #0077b5; /* change de couleur au survol */
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
