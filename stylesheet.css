@@ -182,7 +182,6 @@ footer {
 }
 
 .light-mode header,
-.light-mode .skill,
 .light-mode input,
 .light-mode textarea {
     background: #f0f0f0;
@@ -197,10 +196,6 @@ footer {
 
 .light-mode h1::after {
     background: #0d1117;
-}
-
-.light-mode .skill:hover {
-    background: rgba(88,166,255,0.3);
 }
 
 body.light-mode ::placeholder {
@@ -275,12 +270,12 @@ body.light-mode ::placeholder {
   padding: 10px;
 }
 
-.language_used_h3 {
+#language_used_h3 {
     text-align: center;
     font-size: 20px;
 }
 
-.language_used_h2 {
+#language_used_h2 {
     text-align: center;
     font-size: 40px;
 }
@@ -288,6 +283,7 @@ body.light-mode ::placeholder {
 #tech_stack {
     font-size: 20px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .tags {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Airbnb Paris Project</title>
     <link rel="stylesheet" href="../stylesheet.css">
     <script src="../script.js"></script>
     <link rel="icon" type="image/png" href="../img/logo.PNG"/>
@@ -22,41 +22,71 @@
     </div>
 </header>
 
-    <h3 id="projet_type">TEST1</h3> 
+    <h3 id="projet_type">Data visualization</h3> 
 
-    <h2 id="name">TEST2</h2> 
+    <h2 id="name">Airbnb Paris Project</h2> 
+
+<br>
 
 <div class="container_p">
 
   <div class="bloc_1">
-    <h3 class="language_used_h3">TEST3</h3> 
-    <h2 class="language_used_h2">TEST3</h2> 
+    <h3 id="language_used_h3">Language Used</h3> 
+    <h2 id="language_used_h2">English</h2> 
   </div>
 
   <div class="bloc_2">
-    <h3 id="tech_stack">TEST4</h3> 
+    <h3 id="tech_stack">Tech Stack</h3> 
       <div class="tags">
-    <span class="tag">HTML</span>
-    <span class="tag">CSS</span>
-    <span class="tag">JavaScript</span>
-    <span class="tag">PHP</span>
+    <span class="tag">BigQuery</span>
+    <span class="tag">Data Analysis</span>
+    <span class="tag">Data Cleaning & Enrichment</span>
+    <span class="tag">Data visualization</span>
+    <span class="tag">Graphs</span>
+    <span class="tag">Looker Studio</span>
     <span class="tag">SQL</span>
-    <span class="tag">Bash</span>
-    <span class="tag">PowerShell</span>
-    <span class="tag">Python</span>
-    <span class="tag">Git</span>
-    <span class="tag">WordPress</span>
-    <span class="tag">GitHub</span>
   </div>
   </div>
 
 </div>
 
 <br>
+<br>
 
 <div style="text-align: center;">
   <iframe src="../projets/airbnb_paris_project.pdf" width="1000" height="1000" style="max-width: 100%;"></iframe>
 </div>
+
+<script>
+const translations = {
+    fr: {
+        projet_type: "Visualisation de données",
+        language_used_h3: "Langage utilisé",
+        language_used_h2: "Anglais"
+    },
+    en: {
+        projet_type: "Data visualization",
+        language_used_h3: "Language used",
+        language_used_h2: "English"
+    }
+};
+
+const langSelect = document.getElementById('language');
+
+function setLanguage(lang) {
+    for (const key of ['projet_type', 'language_used_h3', 'language_used_h2']) {
+        const el = document.getElementById(key);
+        if (el) el.textContent = translations[lang][key];
+    }
+}
+
+// initialisation langue par défaut (select déjà sur "en")
+setLanguage(langSelect.value);
+
+langSelect.addEventListener('change', (e) => {
+    setLanguage(e.target.value);
+});
+</script>
 
 </body>
 </html>
