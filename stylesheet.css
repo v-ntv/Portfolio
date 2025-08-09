@@ -342,6 +342,35 @@ i:hover {
 .icon-line h2[data-lang] {
   font-size: 1.5rem;
 }
+#contact h1 {
+  margin-bottom: 1rem;
+}
+
+#contact .icons {
+  display: flex;          /* icônes côte à côte */
+  gap: 20px;              /* espace entre icônes */
+  margin-bottom: 10px;    /* garde un peu d’espace en dessous */
+}
+
+/* adapte le style des liens pour qu’ils soient en ligne et non en bloc */
+#contact .icons a {
+  display: inline-block;  /* plus block pour côte à côte */
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;       /* pas d’espace vertical ici */
+  transition: color 0.3s;
+}
+
+#contact .icons a:hover {
+  color: #0077b5;
+}
+
+/* Light mode, même principe */
+.light-mode #contact .icons a {
+  color: black;
+}
+
 
 /* Responsive */
 

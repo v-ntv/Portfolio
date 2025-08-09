@@ -31,15 +31,12 @@ I am organized, rigorous and also i am someone who is calm under pressure as i w
 I decided to upskill with data analytics because I believe data is at the heart of every company and it’s a powerful asset for business decision.
 <br><br>
 My main strength is my background in IT, it gives me a solid foundation to understand the complexity of infrastructures, systems and computer languages and therefore analyze data effectively.`,
-            contact: "Contact",
-            email: "Your email:",
-            message: "Your message:",
-            send: "Send",
             theme: "Dark Mode",
             language_spoken: "English, French",
             hire: "Available for hire",
             where: "International",
-            how: "Remote, Hybrid"
+            how: "Remote, Hybrid",
+            contact: "Contact"
         },
         fr: {
             title: "Portfolio VERHUST Vincent",
@@ -56,14 +53,12 @@ Je suis organisé, rigoureux et je sais aussi garder mon calme sous la pression 
 J'ai décidé de monter en compétences avec l'analyse de données car je suis convaincu que les données sont au cœur de toute entreprise et qu'elles constituent un atout majeur pour la prise de décision.
 <br><br>
 Mon principal atout réside dans mon expérience en informatique. Elle me permet de comprendre la complexité des infrastructures, des systèmes et des langages informatiques, et donc d'analyser efficacement les données.`,
-            email: "Votre email :",
-            message: "Votre message :",
-            send: "Envoyer",
             theme: "Mode sombre",
             language_spoken: "Anglais, Français",
             hire: "Disponible à l'embauche",
             where: "International",
-            how: "Remote, Hybride"
+            how: "Remote, Hybride",
+            contact: "Contact"
         }
     };
 
