@@ -206,8 +206,8 @@ body.light-mode ::placeholder {
 .btn {
   display: inline-block;
   position: relative;
-  width: 200px;
-  height: 120px;
+  width: 400px;
+  height: 200px;
   background-image: var(--bg-img); 
   background-size: cover;
   background-position: center;
@@ -242,6 +242,17 @@ body.light-mode ::placeholder {
   z-index: 1;
   display: inline-block;
 }
+
+#title_p1, #title_p2 {
+  color: white;
+  padding-bottom: 10px;
+}
+
+.light-mode #title_p1,
+.light-mode #title_p2 {
+  color: black;
+}
+
 
 #projet_type {
     font-size: 20px;
@@ -301,10 +312,6 @@ body.light-mode ::placeholder {
   font-weight: 600;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   user-select: none;
-}
-
-#title_p {
-    color: white;
 }
 
 i {
@@ -371,6 +378,14 @@ i:hover {
   color: black;
 }
 
+#project h2[data-lang] {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.light-mode #project h2[data-lang] {
+    color: black;
+}
 
 /* Responsive */
 

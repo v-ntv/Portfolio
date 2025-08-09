@@ -36,7 +36,13 @@ My main strength is my background in IT, it gives me a solid foundation to under
             hire: "Available for hire",
             where: "International",
             how: "Remote, Hybrid",
-            contact: "Contact"
+            contact: "Contact",
+            title_p1: "Nginx Project",
+            title_p2: "Monitoring Project",
+            title_p3: "Security, Network & Firewall Project",
+            title_p4: "Airbnb Paris Project",
+            title_p5: "TheLook eCommerce Project",
+            title_p6: "Real Estate Profitability Project"
         },
         fr: {
             title: "Portfolio VERHUST Vincent",
@@ -58,7 +64,13 @@ Mon principal atout réside dans mon expérience en informatique. Elle me permet
             hire: "Disponible à l'embauche",
             where: "International",
             how: "Remote, Hybride",
-            contact: "Contact"
+            contact: "Contact",
+            title_p1: "Projet Nginx",
+            title_p2: "Projet Supervision",
+            title_p3: "Projet Sécurité, Réseaux & Pare-feu",
+            title_p4: "Airbnb Paris Project",
+            title_p5: "TheLook eCommerce Project",
+            title_p6: "Projet Rentabilité Immobilière"
         }
     };
 
