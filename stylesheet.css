@@ -146,6 +146,16 @@ nav a:hover {
     cursor: pointer;
 }
 
+.light-mode #language {
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #58a6ff;
+    background: white;
+    color: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
 #theme-toggle {
     padding: 4px 8px;
     border: none;
@@ -290,6 +300,14 @@ body.light-mode ::placeholder {
   font-weight: 600;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   user-select: none;
+}
+
+#title_p {
+    color: white;
+}
+
+#fr_btn {
+    
 }
 
 /* Responsive */
