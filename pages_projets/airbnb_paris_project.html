@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
 <header>
     <a href="../index.html#project"><h1 data-lang="project"></h1></a>
     <div class="settings">
@@ -22,17 +21,17 @@
     </div>
 </header>
 
-    <h3 id="projet_type">Data visualization</h3> 
+    <h3 id="projet_type"></h3> 
 
-    <h2 id="name">Airbnb Paris Project</h2> 
+    <h2 id="name"></h2> 
 
 <br>
 
 <div class="container_p">
 
   <div class="bloc_1">
-    <h3 id="language_used_h3">Language Used</h3> 
-    <h2 id="language_used_h2">English</h2> 
+    <h3 id="language_used_h3"></h3> 
+    <h2 id="language_used_h2"></h2> 
   </div>
 
   <div class="bloc_2">
@@ -62,19 +61,21 @@ const translations = {
     fr: {
         projet_type: "Visualisation de données",
         language_used_h3: "Langage utilisé",
-        language_used_h2: "Anglais"
+        language_used_h2: "Anglais",
+        name: "Airbnb Paris Project"
     },
     en: {
         projet_type: "Data visualization",
         language_used_h3: "Language used",
-        language_used_h2: "English"
+        language_used_h2: "English",
+        name: "Airbnb Paris Project"
     }
 };
 
 const langSelect = document.getElementById('language');
 
 function setLanguage(lang) {
-    for (const key of ['projet_type', 'language_used_h3', 'language_used_h2']) {
+    for (const key of ['projet_type','name', 'language_used_h3', 'language_used_h2']) {
         const el = document.getElementById(key);
         if (el) el.textContent = translations[lang][key];
     }
