@@ -307,6 +307,15 @@ body.light-mode ::placeholder {
     color: white;
 }
 
+i {
+  font-size: 40px;
+  margin: 10px;
+}
+
+i:hover {
+  color: #0077b5; 
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
