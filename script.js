@@ -42,7 +42,7 @@ My main strength is my background in IT, it gives me a solid foundation to under
             title_p3: "Security, Network & Firewall Project",
             title_p4: "Airbnb Paris Project",
             title_p5: "TheLook eCommerce Project",
-            title_p6: "Real Estate Profitability Project"
+            title_p6: "Real Estate Profitability Project in France"
         },
         fr: {
             title: "Portfolio VERHUST Vincent",
@@ -70,7 +70,7 @@ Mon principal atout réside dans mon expérience en informatique. Elle me permet
             title_p3: "Projet Sécurité, Réseaux & Pare-feu",
             title_p4: "Airbnb Paris Project",
             title_p5: "TheLook eCommerce Project",
-            title_p6: "Projet Rentabilité Immobilière"
+            title_p6: "Projet Rentabilité Immobilière en France"
         }
     };
 
