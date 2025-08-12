@@ -22,15 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
             project: "Projects",
             aboutText: `Hi, I’m Vincent.
 <br><br>
-I am a student at Le Wagon in the Data Analyst bootcamp.
+I worked in IT as a technician, where I handled customer support and server administration.
 <br><br>
-Before this, I worked in IT as a technician, where I handled customer support and server administration.
+I enjoy solving problems, taking on challenges and finding effective solutions.
 <br><br>
-I am organized, rigorous and also i am someone who is calm under pressure as i was a security agent before switching to IT.
+With Le Wagon I decided to upskill with data analytics and follow their bootcamp because I believe data is at the heart of every company and it’s a powerful asset for business decision.
 <br><br>
-I decided to upskill with data analytics because I believe data is at the heart of every company and it’s a powerful asset for business decision.
+My main strength is my background in IT, it gives me a solid foundation to understand the complexity of infrastructures, systems and computer languages and therefore analyze data effectively, I also actively keep up with the newest technologies and trends to maintain my expertise.
 <br><br>
-My main strength is my background in IT, it gives me a solid foundation to understand the complexity of infrastructures, systems and computer languages and therefore analyze data effectively.`,
+IT and data form the two pillars of digital performance: one provides the technical foundations, the other generates strategic impact.
+<br>
+- IT is the plumbing that circulates information: networks, servers, databases, software, cybersecurity.
+<br>
+- Data is the water that flows through it: information transformed into value through analytics and decision-making.`,
             theme: "Dark Mode",
             language_spoken: "English, French",
             hire: "Available for hire",
@@ -48,17 +52,22 @@ My main strength is my background in IT, it gives me a solid foundation to under
             title: "Portfolio VERHUST Vincent",
             about: "Bio",
             project: "Projets",
-            aboutText: `Salut c'est Vincent.
+            aboutText: `Bonjour, je m'appelle Vincent.
 <br><br>
-Je suis étudiant au Wagon en formation Data Analyst.
+J'ai travaillé dans l'informatique en tant que technicien systèmes et réseaux, où je m'occupais du support client et de l'administration des serveurs.
 <br><br>
-Avant de commencer cette formation, j'ai travaillé dans l'informatique en tant que technicien systèmes et réseaux, où je m'occupais du support client et de l'administration des serveurs.
+J'aime résoudre des problèmes, relever des défis et trouver des solutions efficaces.
 <br><br>
-Je suis organisé, rigoureux et je sais aussi garder mon calme sous la pression comme je me suis formé en tant qu'agent de sécurité avant de me reconvertir dans l'informatique.
+Avec Le Wagon, j’ai décidé de monter en compétences avec l'analyse de données et de suivre leur bootcamp car je suis convaincu que les données sont au cœur de toute entreprise et qu’elles constituent un atout majeur pour la prise de décision.
 <br><br>
-J'ai décidé de monter en compétences avec l'analyse de données car je suis convaincu que les données sont au cœur de toute entreprise et qu'elles constituent un atout majeur pour la prise de décision.
+Mon principal atout réside dans mon expérience en informatique. Elle me permet de comprendre la complexité des infrastructures, des systèmes et des langages informatiques, et donc d'analyser efficacement les données. Je me tiens également informé des dernières technologies et tendances pour maintenir mon expertise.
 <br><br>
-Mon principal atout réside dans mon expérience en informatique. Elle me permet de comprendre la complexité des infrastructures, des systèmes et des langages informatiques, et donc d'analyser efficacement les données.`,
+L'informatique et les données constituent les deux piliers de la performance numérique : l'une fournit les bases techniques, l'autre génère un impact stratégique.
+<br>
+- L'informatique est la plomberie qui fait circuler l'information: réseaux, serveurs, bases de données, logiciels, cybersécurité.
+<br>
+- Les données sont l'eau qui la traverse: l'information est transformée en valeur par l'analyse et la prise de décision.
+`,
             theme: "Mode sombre",
             language_spoken: "Anglais, Français",
             hire: "Disponible à l'embauche",
