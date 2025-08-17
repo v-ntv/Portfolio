@@ -31,10 +31,7 @@ With Le Wagon I decided to upskill with data analytics and follow their bootcamp
 My main strength is my background in IT, it gives me a solid foundation to understand the complexity of infrastructures, systems and computer languages and therefore analyze data effectively, I also actively keep up with the newest technologies and trends to maintain my expertise.
 <br><br>
 IT and data form the two pillars of digital performance: one provides the technical foundations, the other generates strategic impact.
-<br>
-- IT is the plumbing that circulates information: networks, servers, databases, software, cybersecurity.
-<br>
-- Data is the water that flows through it: information transformed into value through analytics and decision-making.`,
+`,
             theme: "Dark Mode",
             language_spoken: "English, French",
             hire: "Available for hire",
@@ -63,10 +60,6 @@ Avec Le Wagon, j’ai décidé de monter en compétences avec l'analyse de donn�
 Mon principal atout réside dans mon expérience en informatique. Elle me permet de comprendre la complexité des infrastructures, des systèmes et des langages informatiques, et donc d'analyser efficacement les données. Je me tiens également informé des dernières technologies et tendances pour maintenir mon expertise.
 <br><br>
 L'informatique et les données constituent les deux piliers de la performance numérique : l'une fournit les bases techniques, l'autre génère un impact stratégique.
-<br>
-- L'informatique est la plomberie qui fait circuler l'information: réseaux, serveurs, bases de données, logiciels, cybersécurité.
-<br>
-- Les données sont l'eau qui la traverse: l'information est transformée en valeur par l'analyse et la prise de décision.
 `,
             theme: "Mode sombre",
             language_spoken: "Anglais, Français",
