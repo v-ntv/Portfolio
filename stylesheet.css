@@ -204,55 +204,64 @@ body.light-mode ::placeholder {
 }
 
 .btn {
-  display: inline-block;
   position: relative;
+  display: flex;                  
+  align-items: center;           
+  justify-content: center;         
   width: 400px;
   height: 200px;
-  background-image: var(--bg-img); 
+  background-image: var(--bg-img);
   background-size: cover;
   background-position: center;
-  color: white;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 120px; 
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
 }
 
 .btn::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  inset: 0;                        
   background: rgba(0,0,0,0.3);
-  border-radius: 12px;
   z-index: 0;
 }
 
 .btn span {
   position: relative;
   z-index: 1;
-  display: inline-block;
-}
-
-#title_p1, #title_p2 {
+  padding: 0.5em 1em;               
+  background: rgba(0,0,0,0.5);
+  border-radius: 8px;
   color: white;
-  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-.light-mode #title_p1,
-.light-mode #title_p2 {
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.5);
+  border: 2px solid #4078c0;
+}
+
+h2[data-lang^="title_p"] {
+  display: table;                   
+  margin: 0 auto;                   
+  text-align: center;               
+  white-space: normal;              
+  word-break: break-word;           
+  padding: 0.3em 0.6em;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 12px;
+}
+
+.light-mode h2[data-lang^="title_p"] {
+  background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
-
 
 #projet_type {
     font-size: 20px;
@@ -376,16 +385,31 @@ i:hover {
   color: black;
 }
 
-#project h2[data-lang] {
-    color: white;
-    padding-bottom: 10px;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 1rem;                              
+  padding: 1rem 0;                        
+  justify-items: center;                 
 }
 
-.light-mode #project h2[data-lang] {
-    color: black;
+.projects-grid .btn {
+  width: 100%;
+  max-width: 400px;                      
 }
 
-/* Responsive */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 10px;
